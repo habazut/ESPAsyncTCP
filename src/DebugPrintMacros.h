@@ -9,7 +9,9 @@
 #define _FILENAME_ strrchr("/" __FILE__, '/')
 #include<Arduino.h>
 // #define DEBUG_ESP_ASYNC_TCP 1
+#ifndef DEBUG_ESP_TCP_SSL
 #define DEBUG_ESP_TCP_SSL 1
+#endif
 #define DEBUG_ESP_PORT Serial
 
 #if defined(DEBUG_ESP_PORT) && !defined(DEBUG_TIME_STAMP_FMT)
